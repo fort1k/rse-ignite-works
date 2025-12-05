@@ -1,0 +1,90 @@
+/* ===== SÉLECTEUR D'ÉTUDIANT ===== */
+.student-selector {
+    background: linear-gradient(135deg, var(--gaulois-card), #253247);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    border: 2px solid var(--gaulois-border);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: parchmentScroll 1s ease;
+  }
+  
+  .student-selector::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gaulois-green1), var(--gaulois-green2), var(--gaulois-gold));
+  }
+  
+  .student-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gaulois-gold), #f0c040);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border: 4px solid white;
+    box-shadow: 
+        0 4px 12px rgba(209, 175, 56, 0.4),
+        inset 0 0 20px rgba(255,255,255,0.3);
+    position: relative;
+    overflow: hidden;
+    animation: potionBubble 3s infinite;
+  }
+  
+  .student-avatar::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: float 3s infinite;
+  }
+  
+  .student-info h2 {
+    color: var(--gaulois-gold);
+    margin-bottom: 8px;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .student-class {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    background: rgba(0,0,0,0.2);
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid var(--gaulois-border);
+  }
+  
+  .student-select {
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: var(--gaulois-card);
+    color: white;
+    border: 2px solid var(--gaulois-border);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .student-selector {
+        flex-direction: column;
+        text-align: center;
+    }
+  }

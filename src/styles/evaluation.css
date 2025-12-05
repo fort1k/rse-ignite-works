@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+      linear-gradient(rgba(10, 30, 60, 0.85), rgba(15, 40, 80, 0.9)),
+      url('../assets/insc.jpg') center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+}
+
+.eval-wrapper {
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+    padding: 30px;
+    background: #f4f7fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .eval-wrapper h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0d3b66;
+  }
+  
+  .eval-wrapper form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .eval-wrapper form input,
+  .eval-wrapper form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+  
+  .eval-wrapper form textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  
+  .eval-wrapper form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0d3b66;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .eval-wrapper form button:hover {
+    background-color: #07407a;
+  }
+  
